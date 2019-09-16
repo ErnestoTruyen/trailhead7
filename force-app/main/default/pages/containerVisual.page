@@ -1,0 +1,4 @@
+<apex:page controller="containerCntroller">
+    <button onclick="document.getElementById('theFrame').src='spinnerPage?id={!objId}';" >Actualizar</button>
+    <apex:iframe src="spinnerPage?id={!objId}" id="theFrame"/>   
+</apex:page>

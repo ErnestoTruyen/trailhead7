@@ -1,0 +1,6 @@
+<apex:page controller="controladorSpiner">
+    hola
+    <apex:repeat value="{!cuentas}"  var="a">
+        {!a.Name}<br/>
+    </apex:repeat>>
+</apex:page>
