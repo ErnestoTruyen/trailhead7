@@ -1,0 +1,2 @@
+<apex:page controller="ExcelExampleController" contentType="application/vnd.ms-excel#TestExport_{!TODAY()}.xls" >
+</apex:page>

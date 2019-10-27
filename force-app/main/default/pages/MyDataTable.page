@@ -1,0 +1,15 @@
+<apex:page controller="AgentListcontroller" sidebar="false" id="pid" >
+    <script type="text/javascript">
+    function callexcel(){
+        window.open("/apex/AgentReportToExcelPage", '_blank');
+    }
+    </script>
+    <apex:form >
+        <apex:pageBlock > 
+            <apex:pageBlockButtons location="bottom" id="pbbid" style="margin-left:170px !important;">
+                <span style="color: #ff0000;">             // onbutton click we are calling javascript callexcel method 
+                </span>            <apex:commandButton id="excelbutton" value="Generate Excel Spreadsheets" onclick="callexcel();" />
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

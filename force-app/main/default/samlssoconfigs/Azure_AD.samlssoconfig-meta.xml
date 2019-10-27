@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>FederationId</identityMapping>
+    <issuer>https://sts.windows.net/f51d2217-ab2a-42c3-b4d2-e2bb4f4e006b/</issuer>
+    <loginUrl>https://login.microsoftonline.com/f51d2217-ab2a-42c3-b4d2-e2bb4f4e006b/saml2</loginUrl>
+    <name>Azure AD</name>
+    <oauthTokenEndpoint>https://playful-shark-hezwan-dev-ed.my.salesforce.com/services/oauth2/token?so=00D1U0000011rLj</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P11U000007YUbB</requestSigningCertId>
+    <salesforceLoginUrl>https://playful-shark-hezwan-dev-ed.my.salesforce.com?so=00D1U0000011rLj</salesforceLoginUrl>
+    <samlEntityId>https://playful-shark-hezwan-dev-ed.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIC8DCCAdigAwIBAgIQTRK9l2Vrg5lKiPG8zaVHKjANBgkqhkiG9w0BAQsFADA0MTIwMAYDVQQDEylNaWNyb3NvZnQgQXp1cmUgRmVkZXJhdGVkIFNTTyBDZXJ0aWZpY2F0ZTAeFw0xOTA0MjgyMjM5NTVaFw0yMjA0MjgyMjM5NTVaMDQxMjAwBgNVBAMTKU1pY3Jvc29mdCBBenVyZSBGZWRlcmF0ZWQgU1NPIENlcnRpZmljYXRlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq/zixwoTME4a2RRRtWorw52UECigDFX1OH3UiMoDhaCzStd4RjBhanPHWMBlEXEDUIpxc8a3vvhjJe//1uV6cI2/WZZOX9i5W95OGHhJ37/99BMvxWpTYEhdC8W6N8dxqX8WczaPWeQcgEJBZhBvUC9DDovEv23mPizaUeMc/zk/lNVenyeCFCfk1FSeXy0pSUobagDbxGZuJJpKdnAX+D7i4AZYAqGyekwDkY02ZNgJItZZnQZpiQwxEIm6xzNTWlQrn1SHkWcHYLteCOlKlCu7AWlWtRhsLSBdlXEB4UYGkCznjaTEhCUGaeY5ECSS970B3+hGUnxbXMRTrbZZXwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQAC47nZR88s1uaD8WGErI5kz69b8h2FntmRqDdbb+VSwWW/LVj61qC5Kq4fY54NN0j9llunKeR44p3ci/Q2G3D7andR1h+dCHMJ1imUrBBlDLCbW+g4qMeuSwuMutD+51sTyLoe5V5y4WjrXX6a83ZnNL3FYpKVfmMEyEW0TD+Xp5glV41CY1fX8LP7M8awgeH2DP93qsKIGACzDdWs4+1eXKWnCiguEle7opt133MJO3Z5jsQkQ83NLSpWRoV9/u491bl6dqDVaUPlZEprhN+DocL85R0NHidJljW1bEuDGJeE5Suf0sDnIS58c+1DBwoEIq+TeS7agWRBlUzApNpI</validationCert>
+</SamlSsoConfig>

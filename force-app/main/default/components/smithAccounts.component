@@ -1,0 +1,9 @@
+<apex:component controller="findOpportunity" access="global">
+    <apex:attribute name="campaniaId" type="Id" description="Id of the Campaing" assignTo="{!campId}"/>
+	<apex:dataTable value="{!Promociones}" var="promo">
+		<apex:column >
+			<apex:facet name="header">promo Name</apex:facet>
+			{!promo.Name}
+		</apex:column>
+	</apex:dataTable>
+</apex:component>

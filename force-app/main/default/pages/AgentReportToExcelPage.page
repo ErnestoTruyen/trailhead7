@@ -1,0 +1,15 @@
+<apex:page controller="AgentListcontroller" sidebar="false" action="{!loadDataExcel}" contentType="application/vnd.ms-excel#Agentlist.xls">
+    <table style="width:100%;border:1px solid;">
+        <tr style="text-align:center; border:1px solid;">
+            <th>Name</th>
+            <th>phone</th>
+            <th>Email</th>
+        </tr>
+        <apex:repeat value="{!dataList}" var="a">
+            <tr style="text-align:center; border:1px solid;">
+                <td>{!a.Name}</td>
+                <td>{!a.phone}</td>
+            </tr>
+        </apex:repeat>
+    </table>
+</apex:page>
