@@ -6,7 +6,6 @@ public with sharing class AccountController {
         }else {
             System.debug('Fista de negros');
         }
-        System.debug('otra prueba git');
         return [SELECT Id,Name,Active__c FROM Account WHERE Active__c = 'Yes' ];
     }
 }
