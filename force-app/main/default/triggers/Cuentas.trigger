@@ -4,5 +4,6 @@ trigger Cuentas on Account (before update) {
         for (Account cuenta : Trigger.new) {
             emails.add(cuenta.Texto_crudo__c);
         }
+        System.debug('Text de prueba para git');
     }
 }
