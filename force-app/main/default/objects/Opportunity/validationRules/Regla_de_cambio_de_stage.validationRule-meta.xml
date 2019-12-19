@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regla_de_cambio_de_stage</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(
+    ISNEW(),
+    IF(
+        ISBLANK(Numero_de_poliza__c),
+        false,
+        NOT(
+            REGEX( 
+                Numero_de_poliza__c ,
+                &quot;[0-9]{2}-[0-9]{2}-[0-9]{8}&quot;
+            )
+        )
+    ),
+    IF(
+        AND(
+            ISCHANGED(StageName),
+            ISPICKVAL(StageName, &quot;Closed Won&quot;)
+        ),
+        IF(
+            OR(
+                ISBLANK(Numero_de_poliza__c),
+                NOT(
+                    REGEX( 
+                        Numero_de_poliza__c ,
+                        &quot;[0-9]{2}-[0-9]{2}-[0-9]{8}&quot;
+                    )
+                )
+            ),
+            true,
+            false
+        ),
+        IF(
+            ISBLANK(Numero_de_poliza__c),
+            false,
+            NOT(
+                REGEX( 
+                    Numero_de_poliza__c ,
+                    &quot;[0-9]{2}-[0-9]{2}-[0-9]{8}&quot;
+                )
+            )
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Complete el campo Numero de póliza con el formato indicado</errorMessage>
+</ValidationRule>

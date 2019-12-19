@@ -108,4 +108,8 @@
         <name>Postman_Client</name>
         <type>ConnectedApp</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>bigiant_zip__Compress_Anything</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>

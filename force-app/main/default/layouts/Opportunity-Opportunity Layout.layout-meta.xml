@@ -37,6 +37,10 @@
                 <behavior>Edit</behavior>
                 <field>Promociones__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Numero_de_poliza__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

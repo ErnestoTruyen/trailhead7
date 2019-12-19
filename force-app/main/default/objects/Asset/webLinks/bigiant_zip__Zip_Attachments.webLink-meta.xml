@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bigiant_zip__Zip_Attachments</fullName>
+    <availability>online</availability>
+    <description>Prepares the &#39;BZip&#39; screen to display the attachments from this parent.</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Zip Attachments</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>window.location.href = &#39;/apex/bigiant_zip__BZip?parent_sobject={!Asset.Id}&#39;;</url>
+</WebLink>
